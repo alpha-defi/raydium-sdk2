@@ -46,7 +46,7 @@
     --formkit-text-color-disable: #292d41; /* button primary */
   }
   
-  :root.dark {
+  [data-theme="dark"] {
     --primary: hsl(210deg, 6%, 76%);
     --secondary: hsl(180deg, 90%, 78%);
     --status-active: hsl(252deg, 100%, 65%);
@@ -58,4 +58,3 @@
     --formkit-ground-color: hsl(260deg, 2%, 30%);
     --formkit-line-color: hsl(263deg, 9%, 29%);
   }
-  

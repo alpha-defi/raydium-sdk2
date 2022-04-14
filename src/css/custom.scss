@@ -12,8 +12,8 @@
   --raydium-blue-dark: #131a35;
   --raydium-blue-darker: #131a35;
   --raydium-cyan: #39d0d8;
-  --gradient1: white;
-  --gradient2: #aaa;
+  --gradient1: #ddd;
+  --gradient2: #ccc;
   --background: white;
   --background-footer: #bec3c9;
 
@@ -61,6 +61,7 @@ html[data-theme='dark'] footer {
 
 @import "./typesense.scss";
 @import './variables';
+@import './raydium/colors.scss';
 
 // Apply 100% height so children can use entire height
 #__docusaurus {
