@@ -38,6 +38,11 @@ const config = {
     'docusaurus-plugin-sass'
   ],
 
+  themes: [
+    // Use self hosted typesense until Algoria approves raydium SDK
+    'docusaurus-theme-search-typesense'
+  ],
+
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
@@ -105,11 +110,33 @@ const config = {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
       },
-      /* Default to dark theme despite user preference */
+      // Default to dark theme despite user preference 
       colorMode: {
         defaultMode: 'dark',
         disableSwitch: false,
         respectPrefersColorScheme: false,
+      },
+
+      // Use self hosted typesense until Algoria approves raydium SDK
+      typesense: {
+        typesenseCollectionName: 'raydium-sdk', // Replace with your own doc site's name. Should match the collection name in the scraper settings.
+        
+        typesenseServerConfig: {
+          nodes: [
+            {
+              host: 'search.alphadefi.info',
+              port: 443,
+              protocol: 'https',
+            },
+          ],
+          apiKey: '3BldYLqcSaDGvj1',
+        },
+  
+        // Optional: Typesense search parameters: https://typesense.org/docs/0.21.0/api/documents.md#search-parameters
+        typesenseSearchParameters: {},
+  
+        // Optional
+        contextualSearch: true,
       },
     }),
 };
