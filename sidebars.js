@@ -28,11 +28,15 @@ const sidebars = {
    */
 
   overview: [
-    'overview'
+    'overview',
+    'overview/resources'
   ],
 
   tutorial: [
     'tutorial',
+    {
+      Guides: ['tutorial/hello', 'tutorial/intermediate', 'tutorial/advanced']
+    }
   ]
 
 };
