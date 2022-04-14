@@ -3,6 +3,7 @@
 
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+const path = require('path');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -35,7 +36,8 @@ const config = {
   ],
 
   plugins: [
-    'docusaurus-plugin-sass'
+    'docusaurus-plugin-sass',
+    path.resolve(__dirname, './plugins/plugin-image-zoom-custom'),
   ],
 
   themes: [
@@ -157,6 +159,17 @@ const config = {
   
         // Optional
         contextualSearch: true,
+      },
+      // Medium-zoom plugin when clicking on images
+      zoom: {
+        selector: '.markdown :not(em) > img',
+        config: {
+          // options you can specify via https://github.com/francoischalifour/medium-zoom#usage
+          background: {
+            dark: 'rgb(0, 0, 0)',
+            light: 'rgb(0, 0, 0)'
+          }
+        }
       },
     }),
 };
