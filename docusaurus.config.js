@@ -28,7 +28,7 @@ const config = {
         },
         blog: false, // Blog is disabled for SDK
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: require.resolve('./src/css/custom.scss'),
         },
       }),
     ],

@@ -6,12 +6,19 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  /* Raydium colors. TODO: pull into separate file */ 
-  --style-color-blue: #2b6aff;
-  --style-color-cyan: #39d0d8;
+  --raydium-blue: #2b6aff;
+  --raydium-purple: #8c46ff;
+  --raydium-purple-dark: #7c3de7;
+  --raydium-blue-dark: #131a35;
+  --raydium-blue-darker: #131a35;
+  --raydium-cyan: #39d0d8;
+  --gradient1: white;
+  --gradient2: #aaa;
+  --background: white;
+  --background-footer: #bec3c9;
 
-  --ifm-color-primary: #2b6aff;
-  --ifm-color-primary-dark: #29784c;
+  --ifm-color-primary: var(--raydium-purple-dark);
+  --ifm-color-primary-dark: #0e0f0f;
   --ifm-color-primary-darker: #277148;
   --ifm-color-primary-darkest: #205d3b;
   --ifm-color-primary-light: #33925d;
@@ -21,8 +28,14 @@
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
-[data-theme='dark'] {
-  --ifm-color-primary: #2b6aff;
+[data-theme="dark"] {
+  --background: var(--raydium-blue-dark);
+  --background-footer: #1c1e21;
+  --gradient1: #141040;
+  --gradient2: #462481;
+
+  --ifm-color-primary: var(--raydium-purple);
+  --ifm-color-primary-dark: #0e0f0f;
   --ifm-color-primary-dark: #21af90;
   --ifm-color-primary-darker: #1fa588;
   --ifm-color-primary-darkest: #1a8870;
@@ -38,8 +51,16 @@
   padding: 0 var(--ifm-pre-padding);
 }
 
-[data-theme='dark'] .docusaurus-highlight-code-line {
+[data-theme="dark"] .docusaurus-highlight-code-line {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-@import './typesense.scss';
+html[data-theme='dark'] footer {
+  background-color: var(--ifm-navbar-background-color);
+}
+
+@import "./typesense.scss";
+
+#__docusaurus {
+  height: 100%
+}

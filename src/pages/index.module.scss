@@ -26,3 +26,8 @@
   align-items: center;
   justify-content: center;
 }
+
+.main { 
+  background: linear-gradient(320deg,var(--gradient2),var(--gradient1));
+  height: 100%;
+}
