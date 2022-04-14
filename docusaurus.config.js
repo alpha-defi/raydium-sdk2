@@ -83,15 +83,15 @@ const config = {
             items: [
               {
                 label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/raydium',
+                href: 'https://stackoverflow.com/search?q=raydium',
               },
               {
                 label: 'Discord',
-                href: 'https://discordapp.com/invite/raydium',
+                href: 'https://discord.com/channels/813741812598439958/813750197423308820',
               },
               {
                 label: 'Twitter',
-                href: 'https://twitter.com/raydium',
+                href: 'https://twitter.com/RaydiumProtocol',
               },
             ],
           },
