@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'Raydium SDK',
   tagline: 'Welcome to the Raydium SDK',
-  url: 'https://your-docusaurus-test-site.com',
+  url: 'https://sdk.alphadefi.info',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -24,7 +24,7 @@ const config = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
-          editUrl: 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          editUrl: 'https://github.com/alpha-defi/raydium-sdk2/tree/main/packages/create-docusaurus/templates/shared/',
         },
         blog: false, // Blog is disabled for SDK
         theme: {
@@ -32,6 +32,10 @@ const config = {
         },
       }),
     ],
+  ],
+
+  plugins: [
+    'docusaurus-plugin-sass'
   ],
 
   themeConfig:
@@ -74,15 +78,15 @@ const config = {
             items: [
               {
                 label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                href: 'https://stackoverflow.com/questions/tagged/raydium',
               },
               {
                 label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                href: 'https://discordapp.com/invite/raydium',
               },
               {
                 label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                href: 'https://twitter.com/raydium',
               },
             ],
           },
@@ -90,12 +94,8 @@ const config = {
             title: 'More',
             items: [
               {
-                label: 'Blog',
-                to: '/blog',
-              },
-              {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/alpha-defi/raydium-sdk2',
               },
             ],
           },
