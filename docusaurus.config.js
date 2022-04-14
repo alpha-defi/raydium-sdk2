@@ -23,8 +23,8 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
-          editUrl: 'https://github.com/alpha-defi/raydium-sdk2/tree/main/packages/create-docusaurus/templates/shared/',
+          // Please change this to your repo. 
+          editUrl: 'https://github.com/alpha-defi/raydium-sdk2/blob/main/',
         },
         blog: false, // Blog is disabled for SDK
         theme: {
@@ -55,9 +55,21 @@ const config = {
         items: [
           {
             type: 'doc',
-            docId: 'intro',
+            docId: 'overview',
+            position: 'left',
+            label: 'Overview',
+          },
+          {
+            type: 'doc',
+            docId: 'tutorial',
             position: 'left',
             label: 'Tutorial',
+          },
+          {
+            type: 'doc',
+            docId: 'showcase',
+            position: 'left',
+            label: 'Showcase',
           },
           {
             href: 'https://github.com/alpha-defi/raydium-sdk2',
@@ -73,8 +85,16 @@ const config = {
             title: 'Docs',
             items: [
               {
+                label: 'Overview',
+                to: '/docs/overview',
+              },
+              {
                 label: 'Tutorial',
-                to: '/docs/intro',
+                to: '/docs/tutorial',
+              },
+              {
+                label: 'Showcase',
+                to: '/docs/showcase',
               },
             ],
           },
