@@ -2,7 +2,7 @@
  * CSS files with the .module.css suffix will be treated as CSS modules
  * and scoped locally.
  */
-@import './../css/_mixins.scss';
+@import "./../css/_mixins.scss";
 
 .heroBanner {
   padding: 4rem 0;
@@ -27,7 +27,11 @@
   justify-content: center;
 }
 
-.main { 
-  background: linear-gradient(320deg,var(--gradient2),var(--gradient1));
+.main {
+  background: linear-gradient(320deg, var(--gradient2), var(--gradient1));
   height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
