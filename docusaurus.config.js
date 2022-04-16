@@ -86,15 +86,15 @@ const config = {
             items: [
               {
                 label: 'Overview',
-                to: '/docs/overview',
+                to: 'overview',
               },
               {
                 label: 'Tutorial',
-                to: '/docs/tutorial',
+                to: 'tutorial',
               },
               {
                 label: 'Showcase',
-                to: '/docs/showcase',
+                to: 'showcase',
               },
             ],
           },

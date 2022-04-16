@@ -17,7 +17,7 @@ const FeatureList: FeatureItem[] = [
         Learn about the Raydium Software Development Kit (SDK) and its core concepts.
       </>
     ),
-    link: '/docs/overview'
+    link: 'overview'
   },
   {
     title: 'Getting Started',
@@ -26,7 +26,7 @@ const FeatureList: FeatureItem[] = [
         Learn how to use the SDK to build applications on top of Raydium.
       </>
     ),
-    link: '/docs/tutorial'
+    link: 'tutorial'
   },
   {
     title: 'Showcase',
@@ -35,7 +35,7 @@ const FeatureList: FeatureItem[] = [
         A List of projects built with the Raydium SDK.
       </>
     ),
-    link: '/docs/showcase'
+    link: 'showcase'
   },
 ];
 
