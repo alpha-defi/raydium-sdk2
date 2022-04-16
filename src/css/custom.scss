@@ -12,11 +12,18 @@
   --raydium-blue-dark: #131a35;
   --raydium-blue-darker: #131a35;
   --raydium-cyan: #39d0d8;
-  --gradient1: #ddd;
-  --gradient2: #ccc;
+  --gradient1: #ccc;
+  --gradient2: #f5f7f9;
   --background: white;
   --background-footer: #bec3c9;
   --nav-background-color: rgba(255, 255, 255, 0.2);
+
+  // Chakra UI colors
+  --gray-700: #2D3748;
+  --gray-800: #1A202C;
+  --gray-900: #171923;
+  --blue-900: #1A365D;
+  --purple-900: #322659;
 
   --ifm-color-primary: var(--raydium-purple-dark);
   --ifm-color-primary-dark: #0e0f0f;
@@ -30,10 +37,10 @@
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme="dark"] {
-  --background: var(--raydium-blue-dark);
+  --background: var(--gray-800);
   --background-footer: #1c1e21;
-  --gradient1: #141040;
-  --gradient2: #462481;
+  --gradient1: #5347d3;
+  --gradient2: #582ba7;
   --nav-background-color: rgba(0, 0, 0, 0.7);
 
 
@@ -85,9 +92,13 @@ html[data-theme='dark'] footer {
 
 
 // Add frosted glass effect to navbar
-.navbar {
-  backdrop-filter: blur(20px) saturate(160%) contrast(45%) brightness(140%);
-  background-color: var(--nav-background-color);
+// frosted glass https://www.expressflow.com/blog/posts/css-translucent-frosted-glass-dynamic
+// breaks mobile for some reason...?
+@media screen and (min-width: 996px) {
+  .navbar--fixed-top {
+    background-color: var(--nav-background-color);
+    backdrop-filter: blur(20px) saturate(160%) contrast(45%) brightness(140%);
+  }
 }
 
 // Set sidebar to be 100% height
@@ -98,4 +109,8 @@ html[data-theme='dark'] footer {
   nav {
     height: 100%;
   }
+}
+
+html {
+  background-color: var(--background);
 }
