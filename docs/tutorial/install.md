@@ -1,7 +1,5 @@
 ---
-id: install
 title:  Installation
-displayed_sidebar: tutorial
 ---
 
 
@@ -11,7 +9,7 @@ displayed_sidebar: tutorial
 yarn add @raydium-io/raydium-sdk
 ```
 
-### NPM
+## NPM
 
 ```
 npm install @raydium-io/raydium-sdk --save

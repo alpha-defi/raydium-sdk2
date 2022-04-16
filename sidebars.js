@@ -27,19 +27,14 @@ const sidebars = {
   ],
    */
 
-  overview: [
+  docs: [
     'overview',
-    'overview/resources'
-  ],
-
-  tutorial: [
-    'tutorial',
-    'tutorial/install',
+    'overview/resources',
     {
-      Guides: ['tutorial/beginner', 'tutorial/intermediate', 'tutorial/advanced']
-    }
+        Tutorial: ['tutorial', 'tutorial/beginner', 'tutorial/intermediate', 'tutorial/advanced']
+    },
+    'showcase',
   ]
-
 };
 
 module.exports = sidebars;

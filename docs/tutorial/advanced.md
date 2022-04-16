@@ -1,7 +1,5 @@
 ---
-id: advanced
 title:  Advanced
-displayed_sidebar: tutorial
 ---
 
 # Advanced

@@ -1,7 +1,5 @@
 ---
-id: beginner
 title:  Beginner
-displayed_sidebar: tutorial
 ---
 
 # Beginner

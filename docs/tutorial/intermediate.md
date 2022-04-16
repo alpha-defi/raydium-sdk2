@@ -1,7 +1,5 @@
 ---
-id: intermediate
 title:  Intermediate
-displayed_sidebar: tutorial
 ---
 
 # Intermediate

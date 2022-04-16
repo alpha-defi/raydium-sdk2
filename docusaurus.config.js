@@ -24,6 +24,7 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
+          routeBasePath: "/",
           // Please change this to your repo. 
           editUrl: 'https://github.com/alpha-defi/raydium-sdk2/blob/main/',
         },
@@ -56,20 +57,17 @@ const config = {
         },
         items: [
           {
-            type: 'doc',
-            docId: 'overview',
+            to: 'overview',
             position: 'left',
             label: 'Overview',
           },
           {
-            type: 'doc',
-            docId: 'tutorial',
+            to: 'tutorial',
             position: 'left',
             label: 'Tutorial',
           },
           {
-            type: 'doc',
-            docId: 'showcase',
+            to: 'showcase',
             position: 'left',
             label: 'Showcase',
           },
