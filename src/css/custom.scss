@@ -36,6 +36,7 @@
   --gradient2: #462481;
   --nav-background-color: rgba(0, 0, 0, 0.7);
 
+
   --ifm-color-primary: var(--raydium-purple);
   --ifm-color-primary-dark: #0e0f0f;
   --ifm-color-primary-dark: #21af90;
@@ -87,4 +88,14 @@ html[data-theme='dark'] footer {
 .navbar {
   backdrop-filter: blur(20px) saturate(160%) contrast(45%) brightness(140%);
   background-color: var(--nav-background-color);
+}
+
+// Set sidebar to be 100% height
+.main-wrapper > div {
+  height: 100%;
+}
+.theme-doc-sidebar-container {
+  nav {
+    height: 100%;
+  }
 }
