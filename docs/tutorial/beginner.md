@@ -1,9 +1,9 @@
 ---
-id: hello
-title:  Hello World
+id: beginner
+title:  Beginner
 displayed_sidebar: tutorial
 ---
 
-# Hello World
+# Beginner
 
 This section shows how to build the most basic "hello world" application on top of the Raydium SDK.

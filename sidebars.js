@@ -34,8 +34,9 @@ const sidebars = {
 
   tutorial: [
     'tutorial',
+    'tutorial/install',
     {
-      Guides: ['tutorial/hello', 'tutorial/intermediate', 'tutorial/advanced']
+      Guides: ['tutorial/beginner', 'tutorial/intermediate', 'tutorial/advanced']
     }
   ]
 
