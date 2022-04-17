@@ -1,13 +1,6 @@
 ---
-title: Intro
+title: Requirements
 ---
-
-## Intro
-
-This section will provide guides for creating applications with
-the Raydium SDK starting with easier guides towards more advanced guides.
-
-## Requirements
 
 The tutorials assume general knowledge of Solana and Web2 development but before attempting any
 of the tutorials, please check that your machine has the following basic

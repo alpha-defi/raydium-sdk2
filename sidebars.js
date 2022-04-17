@@ -31,7 +31,7 @@ const sidebars = {
     'overview',
     'overview/resources',
     {
-        Tutorial: ['tutorial', 'tutorial/beginner', 'tutorial/intermediate', 'tutorial/advanced']
+        Tutorial: ['tutorial', 'tutorial/requirements', 'tutorial/beginner', 'tutorial/intermediate', 'tutorial/advanced']
     },
     'showcase',
   ]

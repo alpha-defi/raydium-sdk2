@@ -93,10 +93,11 @@ html[data-theme='dark'] .footer {
 }
 
 
-// Add frosted glass effect to navbar
-// frosted glass https://www.expressflow.com/blog/posts/css-translucent-frosted-glass-dynamic
-// breaks mobile for some reason...?
-@media screen and (min-width: 996px) {
+@media screen and (min-width: $bp-mobile) {
+
+  // Add frosted glass effect to navbar
+  // frosted glass https://www.expressflow.com/blog/posts/css-translucent-frosted-glass-dynamic
+  // breaks mobile for some reason...?
   .navbar--fixed-top {
     background-color: var(--nav-background-color);
     backdrop-filter: blur(20px) saturate(160%) contrast(45%) brightness(140%);
